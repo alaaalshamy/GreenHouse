@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { IndexHomeComponent } from './components/index-home/index-home.component';
+import { OwlModule } from 'ngx-owl-carousel';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IndexHomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    OwlModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
