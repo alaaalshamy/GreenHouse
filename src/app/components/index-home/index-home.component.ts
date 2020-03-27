@@ -15,7 +15,7 @@ export class IndexHomeComponent implements OnInit {
 
   ngOnInit() {
   }
-  mySlideImages = ['banner.png','banner3.png','banner2.png'];
+  mySlideImages = ['banner.jpg','banner3.jpg','banner2.jpg'];
    
   play(ob){
     alert(ob)
