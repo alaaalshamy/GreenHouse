@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --prod"
+
   },
   "private": true,
   "dependencies": {
@@ -21,9 +23,11 @@
     "@angular/router": "~8.2.8",
     "@fortawesome/angular-fontawesome": "^0.6.0",
     "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
     "jquery": "^3.4.1",
     "ngx-owl-carousel": "^2.0.7",
     "owl.carousel": "^2.3.4",
+    "path": "^0.12.7",
     "rxjs": "~6.4.0",
     "script-loader": "^0.7.2",
     "tslib": "^1.10.0",
@@ -49,5 +53,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "engines": {
+    "node" : "~8.15.1",
+    "npm" : "~6.4.1"
   }
 }
